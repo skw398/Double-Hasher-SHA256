@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Hash any text twice with SHA-256.">
+        <title>Double Hasher (SHA-256)</title>
+        <style>
+            body {
+                text-align: center;
+                max-width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            textarea {
+                width: 90%; 
+            }
+            #checkmark {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Double Hasher (SHA-256)</h1>
+            <p>Hash any text twice with SHA-256.</p>
+        </header>
+        
+        <main>
+            <div>
+                <textarea id="inputTextarea" placeholder="Text"  autofocus></textarea>
+            <div>
+                <textarea id="resultTextarea"  readonly></textarea>
+            </div>
+                <button id="copyButton">Copy to Clipboard</button>
+                <div id="checkmark">✅</div>
+            </div>
+        </main>
+        <script src="double_hasher.js"></script>
+    </body>
+</html>
